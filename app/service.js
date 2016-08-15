@@ -1,4 +1,4 @@
-//сервис данных по воде
+//СЃРµСЂРІРёСЃ РґР°РЅРЅС‹С… РїРѕ РІРѕРґРµ
 angular
     .module('app')
     .service('dataWater', ['$http', '$q', function ($http, $q) {
@@ -16,7 +16,7 @@ angular
         }
     }]);
 
-//сервис меню селектов
+//СЃРµСЂРІРёСЃ РјРµРЅСЋ СЃРµР»РµРєС‚РѕРІ
 angular
     .module('app')
     .service('dataSelect', ['$http', '$q', function ($http, $q) {
@@ -32,7 +32,7 @@ angular
         }
     }]);
 
-// сервис фильтров
+// СЃРµСЂРІРёСЃ С„РёР»СЊС‚СЂРѕРІ
 angular
     .module('app')
     .service('dataFilters', ['$q', function ($q) {
@@ -41,7 +41,7 @@ angular
             sizeFilter: '',
             mineralFilter: ''
         };
-        // устанавливает данные фильтрации по отдельности
+        // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РЅРЅС‹Рµ С„РёР»СЊС‚СЂР°С†РёРё РїРѕ РѕС‚РґРµР»СЊРЅРѕСЃС‚Рё
         this.setData = (ions, size, mineral) => {
             if (ions) {
                 if (ions === "all") {
@@ -92,7 +92,7 @@ angular
 
 
 
-/*--------------фильтры-------------------*/
+/*--------------С„РёР»СЊС‚СЂС‹-------------------*/
 angular
     .module('app')
     .filter('filterToUpperCase', [function () {
