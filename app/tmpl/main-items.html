@@ -1,0 +1,65 @@
+<div class="col-md-12 padding">
+    <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
+        <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                ng-click="mainItems.sear(
+                    mainItems.dataFilter.ionsFilter,
+                    mainItems.dataFilter.sizeFilter,
+                    mainItems.dataFilter.mineralFilter
+                    )">
+            <h4>Найти</h4>
+        </button>
+    </div>
+</div>
+
+<div class="wrapp col-md-12 ">
+    <ul class="items ">
+        <li class="item "
+            ng-repeat="obj in mainItems.data | startFrom: mainItems.currentPage * mainItems.pageSize | limitTo: mainItems.pageSize">
+            <h1 class="item-header">Mark_{{obj.index}}</h1>
+
+            <div class="item-strip"></div>
+            <p class="item-text">
+                {{obj.text}}
+            </p>
+
+            <div class="item-rait">
+                <h2>Рейтинг: {{obj.rating}}</h2>
+            </div>
+            <div class="item-min">Минерализация: {{obj.mineral}}</div>
+            <div class="col-xs-12 item-btn">
+                <button class="btn btn-block" ng-click="mainItems.goDetal(obj.index, obj)">
+                    <h4>Детали</h4>
+                </button>
+            </div>
+        </li>
+    </ul>
+
+    <div class="col-xs-12">
+        <span class="col-xs-12">{{mainItems.currentPage + 1}} из {{mainItems.paginationPages.length}}</span>
+        <ul class="pagination">
+            <li
+                    ng-click="mainItems.setPageArrow('pre')"
+                    ng-class="{disabled : mainItems.currentPage == 0}">
+                <a href="">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li
+                    ng-repeat="pagin in mainItems.paginationPages | startFrom: mainItems.currentPagination | limitTo: mainItems.limitPagination"
+                    ng-click="mainItems.setPagination(pagin)"
+                    ng-class="{active : mainItems.currentPage == pagin}">
+                <a href="">{{pagin+1}}</a>
+            </li>
+            <li
+                    ng-click="mainItems.setPageArrow('next')"
+                    ng-class="{disabled : mainItems.currentPage +1 == mainItems.paginationPages.length}">
+                <a href="">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

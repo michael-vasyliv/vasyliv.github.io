@@ -1,0 +1,43 @@
+<ol class="breadcrumb step">
+    <li><a ui-sref="main">main</a></li>
+    <li class="active">buy</li>
+</ol>
+<div class="col-sm-12">
+    <div class="col-sm-10 col-sm-offset-1 padding">
+        <div class="media" ng-repeat="item in buy.data">
+
+            <div class=" media-body">
+                <h4 class="media-heading">Mark_{{item.index}}</h4>
+                {{item.text}}
+            </div>
+            <div class=" media-right media-middle">
+                <button
+                        class="btn btn-primary"
+                        ng-click="buy.deleteItem(item)"
+                        >Удалить
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-4 col-xs-offset-8 padding">
+            Всего на: {{buy.price | number:2}}
+        </div>
+    </div>
+    <div class="col-xs-12 padding">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2 ">
+            <button
+                    class=" btn btn-block btn-primary"
+                    ng-click="buy.goMain()">
+                <H4>Вернуться на главную</H4>
+
+
+            </button>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2 ">
+            <button
+                    class=" btn btn-block btn-primary"
+                    ng-click="buy.showModal()">
+                <H4>Заказать</H4>
+            </button>
+        </div>
+</div>
+<order array="buy.data" sum="buy.price"></order>

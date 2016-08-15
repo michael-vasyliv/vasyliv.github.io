@@ -1,0 +1,505 @@
+[
+  {
+    "index": 0,
+    "water": [
+      "hco3",
+      "so4",
+      "ca"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 1.3,
+    "co2": "yes",
+    "text": "Anim sint veniam ut consectetur sunt exercitation eu nostrud mollit irure in duis sunt cupidatat. Consequat voluptate ullamco reprehenderit dolor commodo. Consectetur qui ad est ullamco esse.",
+    "rating": "4.1"
+  },
+  {
+    "index": 1,
+    "water": [
+      "cl",
+      "na+k",
+      "so4",
+      "ca"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 4.4,
+    "co2": "no",
+    "text": "Nulla laborum consequat ut reprehenderit aliqua pariatur est sint. Ipsum labore non duis ad fugiat consequat irure ipsum commodo culpa. Non nostrud fugiat Lorem occaecat veniam.",
+    "rating": "4.3"
+  },
+  {
+    "index": 2,
+    "water": [
+      "na+k",
+      "ca",
+      "hco3",
+      "na+k",
+      "so4"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 1.8,
+    "co2": "yes",
+    "text": "Excepteur aliquip qui adipisicing exercitation et sint voluptate. Ad officia deserunt ea dolor minim nulla Lorem anim do veniam. Nulla reprehenderit cillum ad culpa ullamco.",
+    "rating": "4.8"
+  },
+  {
+    "index": 3,
+    "water": [
+      "cl",
+      "na+k",
+      "mg"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 4.2,
+    "co2": "yes",
+    "text": "Commodo minim do occaecat amet. Ut occaecat ullamco adipisicing ad exercitation pariatur elit irure sunt. Sint fugiat et est non occaecat tempor proident aute sint esse nulla.",
+    "rating": "5"
+  },
+  {
+    "index": 4,
+    "water": [
+      "hco3",
+      "na+k"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 1.3,
+    "co2": "yes",
+    "text": "Ullamco nisi esse sunt do occaecat. Dolor ea excepteur dolor ullamco laborum velit amet velit ullamco. Incididunt adipisicing occaecat labore labore esse consectetur ex sunt occaecat id dolore mollit.",
+    "rating": "4.2"
+  },
+  {
+    "index": 5,
+    "water": [
+      "mg",
+      "cl",
+      "na+k",
+      "hco3"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 3.1,
+    "co2": "no",
+    "text": "Eu sint qui nulla consequat sit adipisicing nostrud do ad nostrud sit tempor consequat exercitation. Elit reprehenderit esse est ad proident occaecat qui aute aliqua culpa quis commodo cupidatat eu. Veniam dolor duis voluptate excepteur nulla.",
+    "rating": "4.1"
+  },
+  {
+    "index": 6,
+    "water": [
+      "na+k",
+      "ca",
+      "mg"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 7.4,
+    "co2": "yes",
+    "text": "Elit velit non eu minim nulla ea culpa elit aliquip tempor minim dolore sit. Ut qui officia dolor commodo culpa ipsum. Officia consequat enim nostrud officia amet veniam.",
+    "rating": "4.6"
+  },
+  {
+    "index": 7,
+    "water": [
+      "so4",
+      "cl"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 8,
+    "co2": "yes",
+    "text": "Aute ad nostrud quis cupidatat excepteur. Ex veniam do ullamco est dolore pariatur reprehenderit labore amet Lorem ipsum in. Dolor amet mollit irure tempor fugiat ut pariatur ex magna officia aliqua reprehenderit.",
+    "rating": "4.4"
+  },
+  {
+    "index": 8,
+    "water": [
+      "cl",
+      "na+k",
+      "mg"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 7.3,
+    "co2": "yes",
+    "text": "In amet ipsum aliquip ea. Cupidatat amet excepteur dolor commodo incididunt Lorem elit et quis qui eu consequat laborum deserunt. Id velit cupidatat deserunt voluptate irure irure ad cupidatat aliquip.",
+    "rating": "4.2"
+  },
+  {
+    "index": 9,
+    "water": [
+      "ca",
+      "mg",
+      "cl",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 2.6,
+    "co2": "yes",
+    "text": "Excepteur adipisicing est nulla elit. Pariatur duis cupidatat anim labore dolor. Laborum reprehenderit ut officia cupidatat.",
+    "rating": "4.1"
+  },
+  {
+    "index": 10,
+    "water": [
+      "so4",
+      "ca",
+      "mg",
+      "hco3",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 5.9,
+    "co2": "yes",
+    "text": "Do non pariatur eiusmod anim elit excepteur tempor sint. Do consequat sint reprehenderit elit ipsum. Sunt sunt et nulla enim tempor.",
+    "rating": "4.3"
+  },
+  {
+    "index": 11,
+    "water": [
+      "cl",
+      "ca",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 5.3,
+    "co2": "yes",
+    "text": "Proident aliqua irure dolore proident est non id cupidatat elit adipisicing sunt sint consequat. Duis enim laboris veniam aliqua ex non laborum tempor amet laboris tempor tempor laboris. Lorem magna exercitation commodo amet.",
+    "rating": "4.5"
+  },
+  {
+    "index": 12,
+    "water": [
+      "na+k",
+      "cl"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 1.5,
+    "co2": "no",
+    "text": "Commodo laboris laborum sint nostrud deserunt exercitation reprehenderit proident. Tempor dolore aliquip aliqua ipsum dolor aliqua magna mollit exercitation. Laboris magna sit do fugiat ea.",
+    "rating": "4.4"
+  },
+  {
+    "index": 13,
+    "water": [
+      "hco3",
+      "na+k",
+      "ca"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 2.6,
+    "co2": "no",
+    "text": "Reprehenderit minim elit reprehenderit qui do eiusmod labore ullamco nostrud. Aliqua enim tempor sit esse reprehenderit tempor dolore eu culpa velit. Adipisicing consequat est proident Lorem quis irure ad sit est eu consectetur.",
+    "rating": "4.8"
+  },
+  {
+    "index": 14,
+    "water": [
+      "cl",
+      "na+k",
+      "hco3"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 5.9,
+    "co2": "no",
+    "text": "Cillum ex incididunt Lorem magna sint ex mollit ipsum sint quis reprehenderit consectetur. Aliquip amet mollit laborum enim aliqua sint culpa elit laboris voluptate. Officia mollit reprehenderit aliquip nostrud commodo proident cupidatat mollit do deserunt Lorem dolor.",
+    "rating": "4.9"
+  },
+  {
+    "index": 15,
+    "water": [
+      "ca",
+      "hco3",
+      "so4"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 4.5,
+    "co2": "no",
+    "text": "Cupidatat cillum proident elit do fugiat aliqua consectetur id occaecat. Ad veniam elit veniam pariatur anim ex magna exercitation incididunt non. Anim voluptate in elit dolor sit officia sint elit culpa esse mollit eu.",
+    "rating": "4.2"
+  },
+  {
+    "index": 16,
+    "water": [
+      "cl",
+      "na+k",
+      "hco3"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 3.8,
+    "co2": "no",
+    "text": "Nisi non incididunt aliquip eu aliqua ut Lorem dolor anim enim cupidatat. Enim do laborum nulla nisi qui elit nisi esse pariatur mollit. Minim nisi elit reprehenderit nulla.",
+    "rating": "4.7"
+  },
+  {
+    "index": 17,
+    "water": [
+      "ca",
+      "ca",
+      "so4",
+      "na+k"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 5.5,
+    "co2": "yes",
+    "text": "Magna pariatur sunt qui reprehenderit culpa mollit elit aute commodo. Eiusmod exercitation cupidatat cupidatat aute esse aliquip laboris dolore. Fugiat veniam proident deserunt magna pariatur.",
+    "rating": "4.5"
+  },
+  {
+    "index": 18,
+    "water": [
+      "hco3",
+      "so4",
+      "na+k",
+      "mg",
+      "ca"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 6,
+    "co2": "yes",
+    "text": "Dolore eu velit culpa ad est laboris magna ut aliquip non. Ullamco dolore et incididunt officia magna. Lorem eiusmod reprehenderit duis quis voluptate reprehenderit sint nostrud elit proident.",
+    "rating": "4.5"
+  },
+  {
+    "index": 19,
+    "water": [
+      "ca",
+      "na+k",
+      "cl",
+      "mg"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 5.8,
+    "co2": "yes",
+    "text": "Aute commodo incididunt magna mollit. Duis fugiat ex excepteur incididunt irure magna ad consequat quis ut laboris deserunt cillum id. Cupidatat minim exercitation nisi aliqua anim ut anim magna consectetur.",
+    "rating": "4.9"
+  },
+  {
+    "index": 20,
+    "water": [
+      "na+k",
+      "ca",
+      "so4",
+      "cl"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 5.8,
+    "co2": "no",
+    "text": "Ullamco sint cupidatat adipisicing aute dolore. Nostrud culpa sint exercitation consectetur duis. Voluptate excepteur eu duis excepteur fugiat mollit laborum cupidatat commodo minim fugiat labore anim ipsum.",
+    "rating": "4.1"
+  },
+  {
+    "index": 21,
+    "water": [
+      "mg",
+      "so4",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 5.6,
+    "co2": "no",
+    "text": "Id eiusmod adipisicing Lorem est magna eu nisi labore. Laborum anim deserunt deserunt est ex tempor do. Duis ad quis irure magna adipisicing aliquip aliquip anim cupidatat.",
+    "rating": "3.9"
+  },
+  {
+    "index": 22,
+    "water": [
+      "so4",
+      "ca",
+      "ca"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 7.3,
+    "co2": "no",
+    "text": "Do dolore eiusmod amet tempor. Occaecat elit deserunt reprehenderit culpa cupidatat adipisicing cillum proident amet quis excepteur adipisicing officia magna. Ex ipsum excepteur eiusmod sunt et eiusmod ad aliqua Lorem labore velit.",
+    "rating": "4.2"
+  },
+  {
+    "index": 23,
+    "water": [
+      "cl",
+      "hco3",
+      "mg"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 7.4,
+    "co2": "yes",
+    "text": "Dolor voluptate et aliquip amet id laborum adipisicing labore velit. Cillum veniam ad nostrud esse mollit commodo mollit tempor do pariatur tempor culpa esse ea. Excepteur nisi aute cupidatat voluptate voluptate Lorem aute dolore voluptate eu do consectetur fugiat.",
+    "rating": "4.8"
+  },
+  {
+    "index": 24,
+    "water": [
+      "ca",
+      "so4",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 1.7,
+    "co2": "no",
+    "text": "Quis qui magna incididunt qui cupidatat ex et sint sint tempor ullamco magna. Aute magna nisi laboris sit dolor veniam ea Lorem deserunt Lorem Lorem ut. Nostrud ipsum occaecat cupidatat occaecat fugiat non ipsum.",
+    "rating": "4.9"
+  },
+  {
+    "index": 25,
+    "water": [
+      "mg",
+      "hco3",
+      "ca",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 7.7,
+    "co2": "no",
+    "text": "Eiusmod qui sit est eiusmod. Adipisicing non excepteur occaecat velit sint id aliqua deserunt nisi dolore do tempor laboris. Adipisicing dolore ut eu cillum non est proident proident Lorem nostrud sit aliquip minim.",
+    "rating": "4.9"
+  },
+  {
+    "index": 26,
+    "water": [
+      "ca",
+      "na+k"
+    ],
+    "size": [
+      1,
+      2
+    ],
+    "mineral": 4.7,
+    "co2": "yes",
+    "text": "Lorem velit culpa eiusmod incididunt incididunt elit ullamco. Cupidatat excepteur non qui labore. Proident elit qui nisi amet.",
+    "rating": "5"
+  },
+  {
+    "index": 27,
+    "water": [
+      "ca",
+      "na+k",
+      "hco3",
+      "so4",
+      "mg"
+    ],
+    "size": [
+      1,
+      2,
+      5,
+      20
+    ],
+    "mineral": 1.8,
+    "co2": "no",
+    "text": "Dolore cillum elit Lorem in et ad do. Ullamco aliqua enim velit labore sint enim ad ex anim consectetur anim qui. Culpa dolore irure esse labore non eu do.",
+    "rating": "4.4"
+  },
+  {
+    "index": 28,
+    "water": [
+      "hco3",
+      "ca"
+    ],
+    "size": [
+      1,
+      2,
+      5
+    ],
+    "mineral": 6,
+    "co2": "no",
+    "text": "Ut deserunt veniam dolor Lorem ut enim laborum enim aliqua veniam reprehenderit anim ex nulla. Qui amet ex aliqua deserunt. Qui consectetur Lorem officia sit magna dolor est ipsum sint deserunt culpa occaecat.",
+    "rating": "4.6"
+  },
+  {
+    "index": 29,
+    "water": [
+      "hco3",
+      "ca",
+      "mg",
+      "cl"
+    ],
+    "size": [
+      1
+    ],
+    "mineral": 1.7,
+    "co2": "no",
+    "text": "Duis mollit sunt veniam nulla aute. Ullamco dolore nostrud dolore esse eiusmod commodo ea quis aliqua et dolore dolor. Labore ea fugiat culpa eiusmod veniam.",
+    "rating": "4.7"
+  }
+]

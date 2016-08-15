@@ -1,0 +1,79 @@
+﻿<div class="main col-md-12">
+    <div class="row step">
+        <div class=" col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 padding">
+            <div class="step__number img-circle step__number_text ">
+                <span>1</span>
+            </div>
+            <div class="step__text ">
+                <span>Выберите в <code>input`s</code> то что хочешь</span>
+                <br>
+                <span class=" ">создашь фильтры</span>
+            </div>
+        </div>
+        <div class=" col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 padding">
+            <div class="step__number img-circle step__number_text">
+                <span>2</span>
+            </div>
+            <div class="step__text ">
+                <span>Кликни по <code>button</code></span>
+                <br>
+                <span>вода отфильтруется</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------->
+    <div class='text-center search row '>
+        <div class="col-sm-4 padding">
+            <label class="col-xs-12">Выбор преобладающих ионов
+                <br>
+
+                <div class="dropdown ">
+                    <button class="btn btn-default dropdown-toggle btn-block " data-toggle="dropdown">
+                        {{mainHead.ionsName}}
+                    </button>
+                    <ul class="dropdown-menu col-xs-12">
+                        <li ng-repeat="(key, val) in mainHead.dataSelect.ions">
+                            <a ng-click="mainHead.setFilter('ionsName', key, val)">{{key}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+        </div>
+        <div class="col-sm-4 padding">
+            <label class="col-xs-12">Выбор емкости
+                <br>
+
+                <div class="dropdown ">
+                    <button class="btn btn-default dropdown-toggle btn-block " data-toggle="dropdown">
+                        {{mainHead.sizeName}}
+                    </button>
+                    <ul class="dropdown-menu col-xs-12">
+                        <li ng-repeat="(key, val) in mainHead.dataSelect.size">
+                            <a ng-click="mainHead.setFilter('sizeName', key, val)">{{key}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+        </div>
+        <div class="col-sm-4 padding">
+            <label class="col-xs-12">Выбор минерализации
+                <br>
+
+                <div class="dropdown ">
+                    <button class="btn btn-default dropdown-toggle btn-block " data-toggle="dropdown">
+                        {{mainHead.mineralName}}
+                    </button>
+                    <ul class="dropdown-menu col-xs-12">
+                        <li ng-repeat="(key, val) in mainHead.dataSelect.mineral">
+                            <a ng-click="mainHead.setFilter('mineralName', key, val)">{{key}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+        </div>
+
+    </div>
+</div>
+
+
