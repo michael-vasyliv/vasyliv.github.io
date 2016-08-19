@@ -1,229 +1,248 @@
 html,
 body {
-  font-size: 16px;
-  color: #00203c;
-  margin: 0;
-  padding: 0;
+    font-size: 16px;
+    color: #00203c;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*------------------------------------------*/
 
 .body {
-  min-height: 100%;
-  background: #b9e2f4;
+    min-height: 100%;
+    background: #b9e2f4;
 }
 
 .html {
-  position: relative;
-  min-height: 100%;
-  padding-bottom: 100px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  background: #4b87ba;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: #4b87ba;
 }
+
 
 /*--------------------шапка----------------------*/
 
 .head {
-  position: relative;
-  height: 300px;
-  background: url(../img/water1.jpg) center center no-repeat;
-  background-size: cover;
-  .head__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 0 2px 5px #3d81b1, 0 -2px 5px #85d0f8;
-  }
+    position: relative;
+    height: 300px;
+    background: url(../img/water1.jpg) center center no-repeat;
+    background-size: cover;
+    .head__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 0 2px 5px #3d81b1, 0 -2px 5px #85d0f8;
+    }
 }
 
+
 /*------------------блок стейтов---------------------*/
+
 .step {
-  background: #62a9d1;
-  position: relative;
+    background: #62a9d1;
+    position: relative;
 }
 
 .step__number {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  background: #126e9f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background: #126e9f;
 }
 
 .step__number_text {
-  font-size: 24px;
-  line-height: 50px;
-  text-align: center;
-  vertical-align: middle;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .step__text {
-  margin-left: 70px;
+    margin-left: 70px;
 }
 
 .main {
-  background: #99d5f4;
+    background: #99d5f4;
 }
 
 .padding {
-  padding: 30px 0;
+    padding: 30px 0;
 }
+
 
 /*----------------------------------*/
 
 .clear:after {
-  content: '';
-  display: block;
-  clear: both;
-  height: 0;
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
 }
 
+
 /*------------блок вывода товара-------------*/
+
 .wrapp {
-  padding: 30px 0;
-  text-align: center;
+    padding: 30px 0;
+    text-align: center;
 }
 
 .items {
-  display: inline-block;
-  padding: 0;
+    display: inline-block;
+    padding: 0;
 }
 
 .item {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  width: 300px;
-  min-height: 450px;
-  //border: 1px solid #cde0f7;
-  border-radius: 7.5px;
-  background: #42aae3;
-  vertical-align: middle;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -ms-transition: all 400ms;
-  -o-transition: all 400ms;
-  transition: all 400ms;
-  &:hover {
-    //border: 1px solid #91a2b9;
-    background: rgba(66, 170, 227, 0.74);
-  }
-  .item-header {
-    margin: 30px 0 20px 0;
-  }
-  .item-strip {
-    width: 200px;
-    height: 1px;
-    margin: auto;
-    background: white;
-  }
-  .item-text {
-    padding: 20px;
-    height: 9.5em;
-    overflow: hidden;
-  }
-  .item-rait {
-
-  }
-  .item-min {
-
-  }
-  .item-btn {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 15px;
-  }
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    width: 300px;
+    min-height: 450px;
+    //border: 1px solid #cde0f7;
+    border-radius: 7.5px;
+    background: #42aae3;
+    vertical-align: middle;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    &:hover {
+        //border: 1px solid #91a2b9;
+        background: rgba(66, 170, 227, 0.74);
+    }
+    .item-header {
+        margin: 30px 0 20px 0;
+    }
+    .item-strip {
+        width: 200px;
+        height: 1px;
+        margin: auto;
+        background: white;
+    }
+    .item-text {
+        padding: 20px;
+        height: 9.5em;
+        overflow: hidden;
+    }
+    .item-rait {}
+    .item-min {}
+    .item-btn {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 15px;
+    }
 }
+
 
 /*--------------------детали итемов---------------------*/
 
 .img-custom {
-  height: 100%;
-  min-height: 300px;
-  background: url("../img/water in glass.jpg") center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+    height: 100%;
+    min-height: 300px;
+    background: url("../img/water in glass.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
+
 
 /*----------ангуляровская анимация итемов-------------*/
 
 .ng-enter {
-  transition: 0s;
+    transition: 0s;
 }
 
-.ng-enter-active {
-}
+.ng-enter-active {}
 
 .ng-leave {
-  transition: 0s;
+    transition: 0s;
 }
 
-.ng-leave-active {
-}
+.ng-leave-active {}
 
 .ng-enter-stagger {
-  transition: 0s;
+    transition: 0s;
 }
 
-.ng-leave-stagger {
-}
+.ng-leave-stagger {}
+
 
 /*-----------прелоадер-------------*/
 
 .preloader {
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width:200px;
-  height:200px;
-  display:block;
-  z-index: 3000;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    display: block;
+    z-index: 3000;
+    margin: auto;
 }
+
 .preloader span {
-  position:absolute;
-  width:200px;
-  height:200px;
-  border-radius:50%;
-  background:#000;
-  -webkit-animation:preloader 1.6s linear infinite;
-  animation:preloader 1.6s linear infinite;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000;
+    -webkit-animation: preloader 1.6s linear infinite;
+    animation: preloader 1.6s linear infinite;
 }
+
 .preloader span:last-child {
-  animation-delay:-0.8s;
-  -webkit-animation-delay:-0.8s;
+    animation-delay: -0.8s;
+    -webkit-animation-delay: -0.8s;
 }
+
 @keyframes preloader {
-  0% {transform: scale(0, 0);opacity:0.5;}
-  100% {transform: scale(1, 1);opacity:0;}
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
 }
+
 @-webkit-keyframes preloader {
-  0% {-webkit-transform: scale(0, 0);opacity:0.5;}
-  100% {-webkit-transform: scale(1, 1);opacity:0;}
+    0% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0;
+    }
 }
 
 
 /* -----bubble-effect----- */
 
 .bubble-effect {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .bubble {
-  position: absolute;
+    position: absolute;
     width: 200px;
     height: 200px;
     margin-top: -100px;
@@ -236,6 +255,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    background: black;
     -webkit-animation: bubble 1.6s linear 1;
     animation: bubble 1.6s linear 1;
 }
@@ -244,12 +264,10 @@ body {
     0% {
         transform: scale(0.1, 0.1);
         opacity: 0.4;
-        background: black;
     }
     100% {
         transform: scale(1, 1);
         opacity: 0;
-        background: black;
     }
 }
 
@@ -257,23 +275,9 @@ body {
     0% {
         -webkit-transform: scale(0.1, 0.1);
         opacity: 0.4;
-        background: black;
     }
     100% {
         -webkit-transform: scale(1, 1);
         opacity: 0;
-        background: black;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
