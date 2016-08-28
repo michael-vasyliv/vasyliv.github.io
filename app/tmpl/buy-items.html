@@ -3,21 +3,13 @@
     <li class="active">buy</li>
 </ol>
 <div class="col-sm-12">
-    <div class="col-sm-10 col-sm-offset-1 padding">
-        <div class="media" ng-repeat="item in buy.data">
+    <div class="col-sm-10 col-sm-offset-1 ">
+        <buy-items-one
+                ng-repeat="item in buy.data"
+                item="item"
+                del="buy.deleteItem(item)"
+                set-price="buy.setPrice"></buy-items-one>
 
-            <div class=" media-body">
-                <h4 class="media-heading">Mark_{{item.index}}</h4>
-                {{item.text}}
-            </div>
-            <div class=" media-right media-middle">
-                <button
-                        class="btn btn-primary"
-                        ng-click="buy.deleteItem(item)"
-                        >Удалить
-                </button>
-            </div>
-        </div>
         <div class="col-xs-4 col-xs-offset-8 padding">
             Всего на: {{buy.price | number:2}}
         </div>
@@ -39,5 +31,5 @@
                 <H4>Заказать</H4>
             </button>
         </div>
-</div>
-<order array="buy.data" sum="buy.price"></order>
+    </div>
+    <order array="buy.priceArray" sum="buy.price"></order>

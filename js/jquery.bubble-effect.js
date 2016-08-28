@@ -2,7 +2,7 @@
 (function($) {
 
     var defaultsRemoveLater = {
-        selector: '.bubble',
+        selector: '.bubble-effect'
     };
 
     $.fn.removeLater = function(options) {
@@ -34,7 +34,7 @@
         background: '',
         width: '',
         height: '',
-        time: '',
+        time: ''
     };
 
     $.fn.bubbleEfect = function(options) {

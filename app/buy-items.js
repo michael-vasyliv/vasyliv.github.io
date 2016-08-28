@@ -9,6 +9,7 @@ angular
                 restrict: 'E',
                 //replace: true,
                 templateUrl: 'app/tmpl/buy-items.html',
+                controllerAs: 'buy',
                 controller: function () {
                     this.dataArrayIndex = $cookies.getObject('buyArray');
                     this.data = [];
@@ -17,7 +18,6 @@ angular
                     /*------------- методы jQuery-----------------*/
                     this.showModal = () => {
                         $('.modal').modal('show');
-                        this.messageModal = 'Этот товар уже добавлен';
                     };
                     /*--------------------------------------------*/
 
@@ -25,7 +25,8 @@ angular
                     dataWater.getData().then((res) => {
                         this.dataWater = res;
                         getDataFromIndex();
-                        this.tekePrice();
+                        getPriceArray();
+                        getPriceAll();
                     });
 
                     //закидываем данные по индексу в масив
@@ -35,24 +36,39 @@ angular
                             this.data.push(this.dataWater[index]);
                         }
                     };
-
+                    getPriceArray = () => {
+                        this.priceArray = [];
+                        for (var i = 0; i < this.data.length; i++) {
+                            var obj = {};
+                            obj['index'] = this.data[i].index;
+                            obj['rating'] = this.data[i].rating;
+                            obj['mineral'] = this.data[i].mineral;
+                            obj['size'] = this.data[i].size[0];
+                            this.priceArray.push(obj);
+                        }
+                        console.log('this.priceArray',this.priceArray);
+                    };
+                    getPriceAll = () => {
+                        this.price = 0;
+                        for (var i = 0; i < this.priceArray.length; i++) {
+                            this.price += ((+this.priceArray[i].rating) + (+this.priceArray[i].mineral)) * (+this.priceArray[i].size);
+                        }
+                    };
                     //получаем индексы из куки
                     this.getData = () => {
                         this.dataArrayIndex = $cookies.getObject('buyArray')
                     };
 
-                    //получаем цену всех товаров из массива
-                    this.tekePrice = () => {
-                        if (!this.data.length) {
-                            this.price = 0;
-                        }
-                        var sum = 0;
-                        for (var j = 0; j < this.data.length; j++) {
-                            sum = sum + (+this.data[j].rating * +this.data[j].mineral);
-                            this.price = sum;
-                        }
-                    };
+                    //задаем цену одной ед товвра
+                    this.setPrice = (index, size) => {
+                        for (var i = 0; i < this.priceArray.length; i++) {
+                            if (this.priceArray[i].index == index) {
+                                this.priceArray[i].size = size;
+                            }
 
+                        }
+                        getPriceAll();
+                    };
                     //удаление елементов
                     this.deleteItem = (obj) => {
                         for (var i = 0; i < this.dataArrayIndex.length; i++) {
@@ -68,14 +84,14 @@ angular
                             }
 
                         }
-                        this.tekePrice();
+                        getPriceArray();
+                        getPriceAll();
                     };
 
                     //переход на мейн страницу
                     this.goMain = () => {
                         $state.go('main');
                     };
-                },
-                controllerAs: 'buy'
+                }
             }
         }]);
