@@ -2,7 +2,7 @@
 (function($) {
 
     var defaultsRemoveLater = {
-        selector: '.bubble-effect'
+        selector: '.bubble'
     };
 
     $.fn.removeLater = function(options) {

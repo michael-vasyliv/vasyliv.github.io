@@ -2,7 +2,8 @@
 
     console.log('asd');
     $(document).bubbleEfect({
-        selector: '.btn'
+        selector: '.btn',
+        time: '800ms'
     });
 
 });
