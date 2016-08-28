@@ -8,7 +8,9 @@
                 ng-repeat="item in buy.data"
                 item="item"
                 del="buy.deleteItem(item)"
-                set-price="buy.setPrice"></buy-items-one>
+                set-price="buy.getPriceAll()"
+                array="buy.priceArray"
+                index="$index"></buy-items-one>
 
         <div class="col-xs-4 col-xs-offset-8 padding">
             Всего на: {{buy.price | number:2}}

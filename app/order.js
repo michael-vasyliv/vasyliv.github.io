@@ -45,8 +45,6 @@ angular
                             //$cookies.putObject('buyArray', []);
                         }
                     };
-                    console.log(this.array);
-
                 }
             }
         }]);

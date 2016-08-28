@@ -5,11 +5,6 @@ angular
         '$urlRouterProvider',
         '$locationProvider',
         function($stateProvider, $urlRouterProvider, $locationProvider) {
-
-            console.log($locationProvider);
-            //$locationProvider.html5Mode(true);
-
-
             $stateProvider
                 .state('main', {
                     url: '/main',
@@ -56,9 +51,7 @@ angular
 
 
             $urlRouterProvider.otherwise('main');
-
-            //$urlRouterProvider.when('', '/index');
-            // $locationProvider.hashPrefix('!');
+            //$locationProvider.html5Mode(true);
         }
     ]);
 

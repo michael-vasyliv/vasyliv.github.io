@@ -26,7 +26,7 @@ angular
                         this.dataWater = res;
                         getDataFromIndex();
                         getPriceArray();
-                        getPriceAll();
+                        this.getPriceAll();
                     });
 
                     //закидываем данные по индексу в масив
@@ -48,7 +48,7 @@ angular
                         }
                         console.log('this.priceArray',this.priceArray);
                     };
-                    getPriceAll = () => {
+                    this.getPriceAll = () => {
                         this.price = 0;
                         for (var i = 0; i < this.priceArray.length; i++) {
                             this.price += ((+this.priceArray[i].rating) + (+this.priceArray[i].mineral)) * (+this.priceArray[i].size);
@@ -59,16 +59,6 @@ angular
                         this.dataArrayIndex = $cookies.getObject('buyArray')
                     };
 
-                    //задаем цену одной ед товвра
-                    this.setPrice = (index, size) => {
-                        for (var i = 0; i < this.priceArray.length; i++) {
-                            if (this.priceArray[i].index == index) {
-                                this.priceArray[i].size = size;
-                            }
-
-                        }
-                        getPriceAll();
-                    };
                     //удаление елементов
                     this.deleteItem = (obj) => {
                         for (var i = 0; i < this.dataArrayIndex.length; i++) {
@@ -85,7 +75,7 @@ angular
 
                         }
                         getPriceArray();
-                        getPriceAll();
+                        this.getPriceAll();
                     };
 
                     //переход на мейн страницу

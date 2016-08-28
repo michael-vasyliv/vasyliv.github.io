@@ -3,6 +3,7 @@
 
         <h4 class="">Mark_{{one.item.index}}</h4>
         <p>{{one.item.text}}</p>
+        !!!{{one.array[one.index].size}}!!!
     </div>
     <div class="col-md-3 text-before-select">
         Цена за 1н л.: {{one.priseForOne()}}
@@ -12,10 +13,11 @@
                 class="form-control"
                 name="size-input"
                 ng-options="val for (key, val) in one.item.size track by val"
-                ng-model="one.selected"
-                ng-change="one.setPrice(one.item.index, one.selected)">
+                ng-model="one.array[one.index].size"
+                ng-change="one.setPrice()">
         </select>
     </div>
+
 
     <div class="col-md-7">
         <button class="btn btn-primary pull-right" ng-click="one.del()">
