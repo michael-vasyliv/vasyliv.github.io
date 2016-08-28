@@ -4,13 +4,13 @@ angular
         '$stateProvider',
         '$urlRouterProvider',
         '$locationProvider',
-        function($stateProvider, $urlRouterProvider, $locationProvider) {
+        function ($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider
                 .state('main', {
                     url: '/main',
                     resolve: {
-                        mainLoadDataWater: function($q, dataWater) {
-                            return $q(function(resolve, reject) {
+                        mainLoadDataWater: function ($q, dataWater) {
+                            return $q(function (resolve, reject) {
                                 dataWater.getData().then((res) => {
                                     this.data = res;
                                     resolve(this.data);
@@ -18,8 +18,8 @@ angular
                                 });
                             });
                         },
-                        loadDataSelect: function($q, dataSelect) {
-                            return $q(function(resolve, reject) {
+                        loadDataSelect: function ($q, dataSelect) {
+                            return $q(function (resolve, reject) {
                                 dataSelect.getData().then((res) => {
                                     this.data = res;
                                     resolve(this.data);
@@ -33,11 +33,12 @@ angular
                 .state('detal', {
                     url: '/detal/:index/:obj',
                     template: '<detal></detal>'
-                }).state('buy', {
+                })
+                .state('buy', {
                     url: '/buy',
                     resolve: {
-                        buyLoadDataWater: function($q, dataWater) {
-                            return $q(function(resolve, reject) {
+                        buyLoadDataWater: function ($q, dataWater) {
+                            return $q(function (resolve, reject) {
                                 dataWater.getData().then((res) => {
                                     this.data = res;
                                     resolve(this.data);
@@ -56,11 +57,10 @@ angular
     ]);
 
 
-
 angular
     .module("app")
-    .run(['$rootScope', function($rootScope) {
-        $rootScope.$on('$stateChangeStart', function(event, toState) {
+    .run(['$rootScope', function ($rootScope) {
+        $rootScope.$on('$stateChangeStart', function (event, toState) {
             //$('.modal, .fade').modal('hide');
             console.log('chenge state');
         });
