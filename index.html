@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+     <base href="/">
     <!-- jQuery -->
     <script src="js/jquery-3.1.0.js"></script>
     <!-- bootstrap -->
@@ -33,14 +34,19 @@
     <script src="app/buy-items-one.js"></script>
     <script src="app/modal.js"></script>
     <script src="app/order.js"></script>
-    <script src="app/app-config.js"></script>
     <script src="app/service.js"></script>
+    <script src="app/app-config.js"></script>
+    <!-- <base href="/"> -->
 </head>
+
 <body class='body'>
+    
     <ui-view class="view">
-        <div class="preloader">
-            <span></span>
-            <span></span>
+        <div class="preloader-wrapp">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </ui-view>
     <footer class="footer">

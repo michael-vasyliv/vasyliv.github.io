@@ -5,7 +5,6 @@ angular
             restrict: "E",
             templateUrl: "app/tmpl/main-state.html",
             controller: function() {
-
             },
             controllerAs: 'mainState'
         }
