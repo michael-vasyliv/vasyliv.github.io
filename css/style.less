@@ -36,14 +36,24 @@ body {
     height: 300px;
     background: url(../img/water1.jpg) center center no-repeat;
     background-size: cover;
-    .head__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .head__text__color {
         color: white;
         text-shadow: 0 2px 5px #3d81b1, 0 -2px 5px #85d0f8;
     }
+}
+.vertical__wrapp {
+  position: absolute;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical__item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 
