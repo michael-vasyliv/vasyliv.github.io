@@ -9,7 +9,7 @@ angular
         function ($q, $stateParams, $cookies, $state, $timeout) {
             return {
                 restrict: "E",
-                //replace: true,
+                replace: true,
                 scope: {
                     count: '='
                 },

@@ -3,7 +3,7 @@ angular
     .directive('mainHead', ['dataSelect', 'dataFilters', function (dataSelect, dataFilters) {
         return {
             restrict: 'E',
-            //replace: true,
+            replace: true,
             templateUrl: 'app/tmpl/main-head.html',
             controller: function () {
 

@@ -1,53 +1,56 @@
-<my-header></my-header>
-<ol class="breadcrumb step">
-    <li><a ui-sref="main">main</a></li>
-    <li class="active">detal</li>
-</ol>
-<div class="col-sm-12 padding">
-    <div class="col-sm-4 ">
-        <div class="img-custom"></div>
+<div class="">
+    <my-header></my-header>
+    <ol class="breadcrumb step">
+        <li><a ui-sref="main">main</a></li>
+        <li class="active">detal</li>
+    </ol>
+    <div class="col-sm-12 padding">
+        <div class="col-sm-4 ">
+            <div class="img-custom"></div>
+        </div>
+        <div class="col-sm-8">
+            <H1>Mark_{{detal.obj.index}}</H1>
+
+            <p>
+                Ионы: <span ng-repeat="item in detal.obj.water track by $index">{{item | filterToUpperCase}}{{$last ? '.': ', '}}</span>
+            </p>
+
+            <p>
+                Размеры: <span
+                    ng-repeat="item in detal.obj.size track by $index">{{item }}{{$last ? 'л.': 'л, '}}</span>
+            </p>
+
+            <p>
+                Содержание CO2: {{detal.obj.co2}}
+            </p>
+
+            <p>
+                Описание воды: {{detal.obj.text}}
+            </p>
+
+            <p>
+                Рейтинг: {{detal.obj.rating}}
+            </p>
+        </div>
+
     </div>
-    <div class="col-sm-8">
-        <H1>Mark_{{detal.obj.index}}</H1>
+    <div class="col-xs-12 padding">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2 ">
+            <button
+                    class=" btn btn-block btn-primary"
+                    ng-click="detal.goMain()">
+                <H4>Вернуться на главную</H4>
 
-        <p>
-            Ионы: <span ng-repeat="item in detal.obj.water track by $index">{{item | filterToUpperCase}}{{$last ? '.': ', '}}</span>
-        </p>
-
-        <p>
-            Размеры: <span ng-repeat="item in detal.obj.size track by $index">{{item }}{{$last ? 'л.': 'л, '}}</span>
-        </p>
-
-        <p>
-            Содержание CO2: {{detal.obj.co2}}
-        </p>
-
-        <p>
-            Описание воды: {{detal.obj.text}}
-        </p>
-
-        <p>
-            Рейтинг: {{detal.obj.rating}}
-        </p>
+            </button>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2 ">
+            <button
+                    class=" btn btn-block btn-primary"
+                    ng-click="detal.buyItem()">
+                <H4>Добавить в корзину</H4>
+            </button>
+        </div>
     </div>
 
+    <modal text="detal.messageModal"></modal>
 </div>
-<div class="col-xs-12 padding">
-    <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2 ">
-        <button
-                class=" btn btn-block btn-primary"
-                ng-click="detal.goMain()">
-            <H4>Вернуться на главную</H4>
-
-        </button>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2 ">
-        <button
-                class=" btn btn-block btn-primary"
-                ng-click="detal.buyItem()">
-            <H4>Добавить в корзину</H4>
-        </button>
-    </div>
-</div>
-
-<modal text="detal.messageModal" ></modal>

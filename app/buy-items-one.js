@@ -3,6 +3,7 @@ angular
     .directive('buyItemsOne', [function () {
         return {
             restrict: 'E',
+            replace: true,
             scope: {
                 item: '=',
                 setPrice: '&',

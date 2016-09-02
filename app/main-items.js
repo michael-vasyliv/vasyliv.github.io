@@ -11,7 +11,7 @@ angular
         function ($q, $filter, $stateParams, $state, $cookies, dataFilters, dataWater) {
             return {
                 restrict: 'E',
-                //replace: true,
+                replace: true,
                 templateUrl: 'app/tmpl/main-items.html',
                 controller: function () {
                     //init

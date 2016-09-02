@@ -7,7 +7,7 @@ angular
         function ($cookies, dataWater, $state) {
             return {
                 restrict: 'E',
-                //replace: true,
+                replace: true,
                 templateUrl: 'app/tmpl/buy-items.html',
                 controllerAs: 'buy',
                 controller: function () {

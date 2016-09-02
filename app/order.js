@@ -5,6 +5,7 @@ angular
         function ($http) {
             return {
                 restrict: 'E',
+                replace: true,
                 templateUrl: 'app/tmpl/order.html',
                 scope: {
                     array: '=',

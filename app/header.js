@@ -3,7 +3,7 @@
     .directive('myHeader', [function () {
             return {
                 restrict: 'E',
-                //replace: true,
+                replace: true,
                 templateUrl: 'app/tmpl/header.html',
                 controller: function () {
 
