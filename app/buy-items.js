@@ -4,29 +4,40 @@ angular
         '$cookies',
         'dataWater',
         '$state',
-        function ($cookies, dataWater, $state) {
+        '$q',
+        function($cookies, dataWater, $state, $q) {
             return {
                 restrict: 'E',
                 replace: true,
                 templateUrl: 'app/tmpl/buy-items.html',
                 controllerAs: 'buy',
-                controller: function () {
-                    this.dataArrayIndex = $cookies.getObject('buyArray');
+                controller: function() {
+                    function getCookiesObject() {
+                        var d = $q.defer();
+                        this.dataArrayIndex = $cookies.getObject('buyArray');
+                        d.resolve(this.dataArrayIndex);
+                        return d.promise;
+
+                    }
                     this.data = [];
                     this.price = 0;
 
                     /*------------- методы jQuery-----------------*/
                     this.showModal = () => {
-                        $('.modal').modal('show');
+                        angular.element('.modal').modal('show');
                     };
                     /*--------------------------------------------*/
 
                     //получаем данные и из них по куки получаем выбраные итемы
                     dataWater.getData().then((res) => {
                         this.dataWater = res;
-                        getDataFromIndex();
-                        getPriceArray();
-                        this.getPriceAll();
+                        getCookiesObject().then((resp) => {
+                            this.dataArrayIndex = resp;
+                            getDataFromIndex();
+                            getPriceArray();
+                            this.getPriceAll();
+                        })
+
                     });
 
                     //закидываем данные по индексу в масив
@@ -46,7 +57,6 @@ angular
                             obj['size'] = this.data[i].size[0];
                             this.priceArray.push(obj);
                         }
-                        console.log('this.priceArray',this.priceArray);
                     };
                     this.getPriceAll = () => {
                         this.price = 0;
@@ -68,9 +78,6 @@ angular
                                 $cookies.putObject('buyArray', this.dataArrayIndex);
                                 //удаляем с директивы
                                 this.data.splice(i, 1);
-
-                                console.log('this.data', this.data);
-                                console.log("$cookies.getObject('buyArray')", $cookies.getObject('buyArray'));
                             }
 
                         }
@@ -84,4 +91,5 @@ angular
                     };
                 }
             }
-        }]);
+        }
+    ]);

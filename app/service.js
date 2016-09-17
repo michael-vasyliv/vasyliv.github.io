@@ -5,13 +5,13 @@ angular
         this.data;
 
         this.getData = () => {
+            var d = $q.defer();
             $http.get('data.json').then((res) => {
                 this.data = res.data;
+                d.resolve(this.data);
             }, (rej) => {
                 this.data = rej;
             });
-            var d = $q.defer();
-            d.resolve(this.data);
             return d.promise;
         }
     }]);
@@ -23,11 +23,11 @@ angular
         this.data;
 
         this.getData = () => {
+            var d = $q.defer();
             $http.get('data-select.json').then((res) => {
                 this.data = res.data;
+                d.resolve(this.data);
             });
-            var d = $q.defer();
-            d.resolve(this.data);
             return d.promise;
         }
     }]);
@@ -117,7 +117,7 @@ angular
         return function (item, start) {
             if (angular.isArray(item)) {
                 //parse to int
-                start = +start;
+                start = parseInt(start);
                 return item.slice(start);
             }
 
